@@ -1,0 +1,41 @@
+<ion-modal-view class="">
+  <ion-header-bar>
+    <div class="buttons">
+      <button class="button button-icon button-clear" ng-click="closeQR()"><i class="icon ion-ios-arrow-back"></i></button>
+    </div>
+    <h1 class="title">QR LEIDO</h1>
+    <!--
+    <div class="buttons">
+      <button class="button button-clear ion-ios-close-outline" ng-click="closeAddMedioPago()"> Cerrar</button>
+    </div>
+    -->
+  </ion-header-bar>
+  <ion-content on-swipe-right="closeQR()">
+    <br /><br /><br />
+    <div class="text-center check">
+      <i class="ion-ios-checkmark-outline"></i>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+          <h3>EVENTO:</h3>
+          <h2>{{modalData.evento}}</h2>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col text-center">
+          <h3>+1 STAFF:</h3>
+          <h2>{{modalData.staffName}}</h2>
+      </div>
+    </div> 
+    </div> 
+
+    <div class="text-center">
+      <br /><br />
+      <button class="button-eme-2 button" ng-click="closeQR();">FINALIZAR</button>
+    </div>
+
+
+  </ion-content>
+</ion-modal-view>

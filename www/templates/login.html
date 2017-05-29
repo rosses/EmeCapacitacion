@@ -1,0 +1,33 @@
+<ion-view view-title="Login" hide-nav-bar="true">
+  <!-- do you want padding? -->
+  <ion-content scroll="false">
+  <eme-header>
+    <div class="eme-header__wrapper">
+      <img src="img/logo_alta.png" class="welcome_eme" />
+
+      <div class="eme-header__titles">
+        <h1 class="eme-header__title">BIENVENIDO A</h1>
+        <h2 class="eme-header__title">EME SERVICIOS</h2>
+      </div>
+    </div>
+  </eme-header>
+      <div class="welcome__phone">
+        <img src="img/the_distribuidor.png" class="the_phone" />
+        <input class="welcome__phone-input" ng-model="loginData.usuario" maxlength="100" type="text" placeholder="Usuario / RUT" />
+      </div>
+      <div class="welcome__phone">
+        <img src="img/the_clave.png" class="the_phone" />
+        <input class="welcome__phone-input" ng-model="loginData.clave" maxlength="50" type="password" placeholder="Password" />
+      </div>
+
+      <eme-button>
+      <!--type="submit"-->
+      <p class="eme__button-text">
+        <button class="eme__button-next" ng-click="doLogin()">Ingresar</button>
+      </p>
+      </eme-button>
+      <p class="welcome__instructions">{{abaTerrenoVersionGlo}}.{{abaTerrenoVersionVer}}.{{abaTerrenoVersionRev}} {{$root.abaTerrenoAmbiente}}</p>
+
+  </ion-content>
+</ion-view>
+
